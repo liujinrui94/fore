@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cai88.tools.view.TopView android:id="@id/topView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.cai88.tools.view.FitImageView    android:visibility="gone" android:id="@id/headIv" android:layout_width="0dip" android:layout_height="0dip" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/headLayout" android:background="@color/listdiv2" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="期次" android:layout_weight="1.2" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="开奖号码" android:layout_weight="3.0" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="总和" android:layout_weight="1.8" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="龙虎" android:layout_weight="0.8" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="前三/中三/后三" android:layout_weight="2.5" />
+    </LinearLayout>
+    <ImageView android:id="@id/headDiv" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/listdiv" />
+    <com.cai88.tools.view.MyListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/listdiv" android:dividerHeight="1.0dip" />
+</LinearLayout>

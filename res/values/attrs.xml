@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="shadowDrawable" format="boolean" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="closeOnTapEnabled" format="boolean" />
+    <attr name="stickTo">
+        <enum name="auto" value="0" />
+        <enum name="right" value="-1" />
+        <enum name="left" value="-2" />
+        <enum name="middle" value="-3" />
+    </attr>
+</resources>

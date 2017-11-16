@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/topPnl" android:background="@color/red" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/leftBtn" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dockbtn" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/backBtn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:drawableLeft="@drawable/top_back_left_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/topTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/otherBtn" android:background="@color/alpha" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

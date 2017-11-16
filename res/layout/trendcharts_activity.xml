@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mainChartBasePnl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cai88.tools.view.TopView android:id="@id/topView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/choosePnl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/chooseTitlePnl" android:layout_width="@dimen/chart_width" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/chooseTitleTv" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="选号" />
+                <ImageView android:id="@id/line8" android:background="@color/listdiv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" />
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/chooseTitleTv2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="选号" />
+                <ImageView android:id="@id/line9" android:background="@color/listdiv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" />
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/chooseTitleTv3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="选号" />
+            </LinearLayout>
+            <ImageView android:id="@id/line7" android:background="@color/listdiv" android:layout_width="@dimen/div_line_height2" android:layout_height="fill_parent" />
+            <com.cai88.tools.view.HorizontalScrollView4Cai88 android:id="@id/chooseSv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chooseSvPnl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/choosePnl01" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+                    <ImageView android:id="@id/line10" android:background="@color/listdiv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/choosePnl02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+                    <ImageView android:id="@id/line11" android:background="@color/listdiv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/choosePnl03" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+                </LinearLayout>
+            </com.cai88.tools.view.HorizontalScrollView4Cai88>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chooseInfoPnl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/chart_height">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/chooseInfoTitlePnl" android:layout_width="@dimen/chart_width" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/chooseInfoTitleTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已选" />
+            </LinearLayout>
+            <ImageView android:id="@id/line12" android:background="@color/listdiv" android:layout_width="@dimen/div_line_height2" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chooseInfoSvPnl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="14.0sp" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/chooseInfoResTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:text="" android:lineSpacingExtra="3.0dip" android:lineSpacingMultiplier="1.1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/issuePnl" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_below="@id/topView">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/issueTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/red" android:id="@id/remainTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/remainTimePb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:max="0" android:progress="0" android:progressDrawable="@drawable/progressbar6" android:layout_below="@id/issuePnl" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tabPnl" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_below="@id/remainTimePb">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/settingPnl" android:layout_width="@dimen/chart_width" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/settingTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" />
+        </LinearLayout>
+        <ImageView android:id="@id/line2" android:background="@color/listdiv" android:layout_width="@dimen/div_line_height2" android:layout_height="fill_parent" />
+        <com.cai88.tools.view.TabView android:gravity="center" android:id="@id/tabView" android:layout_width="fill_parent" android:layout_height="33.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/line3" android:background="@color/listdiv" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" android:layout_below="@id/tabPnl" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chartPnl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/div_line_height2" android:layout_above="@id/choosePnl" android:layout_below="@id/tabPnl">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/chart_load_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/gray" android:id="@id/errorTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="" />
+            <Button android:textColor="@color/white" android:id="@id/btn_reload" android:background="@drawable/btn_round_red_selector" android:layout_width="84.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:minWidth="80.0dip" android:text="重试" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/topTabPnl" android:layout_width="fill_parent" android:layout_height="@dimen/chart_height">
+            <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/issueTitleTv" android:layout_width="@dimen/chart_width" android:layout_height="fill_parent" android:text="期次" />
+            <ImageView android:id="@id/line4" android:background="@color/listdiv" android:layout_width="@dimen/div_line_height2" android:layout_height="fill_parent" />
+            <com.cai88.tools.view.HorizontalScrollView4Cai88 android:id="@id/topSv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <LinearLayout android:orientation="horizontal" android:id="@id/topSvPnl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.cai88.tools.view.HorizontalScrollView4Cai88>
+        </LinearLayout>
+        <ImageView android:id="@id/line5" android:background="@color/listdiv" android:layout_width="fill_parent" android:layout_height="@dimen/div_line_height2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.cai88.tools.view.VerticalScrollView android:id="@id/leftSv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="@dimen/chart_width" android:layout_height="fill_parent" android:overScrollMode="never">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.cai88.tools.view.DrawTrendChartsView android:id="@id/drawLeftView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </com.cai88.tools.view.VerticalScrollView>
+            <ImageView android:id="@id/line6" android:background="@color/listdiv" android:layout_width="@dimen/div_line_height2" android:layout_height="fill_parent" />
+            <com.cai88.tools.view.VerticalScrollView android:id="@id/rightVSv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <com.cai88.tools.view.HorizontalScrollView4Cai88 android:id="@id/rightHSv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.cai88.tools.view.DrawTrendChartsView android:id="@id/drawView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                </com.cai88.tools.view.HorizontalScrollView4Cai88>
+            </com.cai88.tools.view.VerticalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

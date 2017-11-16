@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cai88.tools.view.TopView android:id="@id/topView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout    android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50dip" android:layout_height="50dip" android:layout_marginTop="20.0dip" android:src="@drawable/appicon" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/lightblack" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/app_name" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/lightblack" android:layout_gravity="center_horizontal" android:id="@id/versionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            <ImageView android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="20.0dip" />
+            <LinearLayout android:visibility="gone" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feedbackLayout" android:background="@drawable/commonbg_selector" android:layout_width="0dip" android:layout_height="0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/ic_feedback" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/lightblack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="意见反馈" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/listdiv" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/helpLayout" android:background="@drawable/commonbg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/moreviewLayoutHeight">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/ic_help" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/lightblack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="玩法帮助" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/listdiv" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/updateLayout" android:background="@drawable/commonbg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/moreviewLayoutHeight">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/ic_update" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/lightblack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="版本更新" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/listdiv" />
+            <LinearLayout    android:visibility="gone" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buyLayout" android:background="@drawable/commonbg_selector" android:layout_width="0dip" android:layout_height="0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/ic_buy" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/lightblack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="在线购彩" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/listdiv" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

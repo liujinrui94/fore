@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff404141</color>
+    <color name="alpha">#00ffffff</color>
+    <color name="red">#ffde2317</color>
+    <color name="blue">#ff2986f9</color>
+    <color name="listdiv">#ffdadada</color>
+    <color name="gray">#ff898989</color>
+    <color name="lightgray">#ff2986f9</color>
+    <color name="redbgdiv">#ffff5f76</color>
+    <color name="bluebgdiv">#ff4696f8</color>
+    <color name="whitehover">#fff6f6f6</color>
+    <color name="listdiv2">#fff4f4f4</color>
+    <color name="orange">#fffe7c1e</color>
+    <color name="alphared">#11fa3a55</color>
+    <color name="alphablue">#112986f9</color>
+    <color name="bg2">#ffeeeeee</color>
+    <color name="grayblack">#ff625e5b</color>
+    <color name="color_gray_898989">#ff898989</color>
+    <color name="color_red_d24c0a">#ffd24c0a</color>
+    <color name="lightGreen">#ffb0e1ca</color>
+    <color name="chartBgRed">#ffe67912</color>
+    <color name="lightGray_03">#ffe6e6e6</color>
+    <color name="chartKlpk3Yellow">#fff7c526</color>
+    <color name="chartDefaultColor1">#ffffffff</color>
+    <color name="chartDefaultColor2">#ffededee</color>
+    <color name="color_blue_0a6dd2">#ff0a6dd2</color>
+    <color name="color_gray_dadada">#ffdddddd</color>
+    <color name="lightblack">#ffa0a0a0</color>
+    <color name="tb_munion_item_force">#ffe3e3e3</color>
+    <color name="umeng_fb_color_btn_normal">#ff333333</color>
+    <color name="umeng_fb_color_btn_pressed">#ff1495f7</color>
+</resources>

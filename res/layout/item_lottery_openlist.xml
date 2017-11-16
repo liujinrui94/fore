@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/itemLayout" android:background="@drawable/commonbg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/issueTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="12312" android:layout_weight="1.2" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/code1Tv" android:background="@drawable/cricle_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="1.0dip" android:text="1" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/code2Tv" android:background="@drawable/cricle_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="1.0dip" android:text="2" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/code3Tv" android:background="@drawable/cricle_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="1.0dip" android:text="3" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/code4Tv" android:background="@drawable/cricle_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="1.0dip" android:text="4" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/code5Tv" android:background="@drawable/cricle_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="5" />
+        </LinearLayout>
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/sumTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="23/大 /单" android:layout_weight="1.8" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/longhuTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="龙" android:layout_weight="0.8" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@color/listdiv" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/qzhSanTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="杂六/对子/对子" android:layout_weight="2.5" />
+    </LinearLayout>
+</LinearLayout>
